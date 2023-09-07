@@ -42,6 +42,7 @@ public class _153_FindMinimumInRotatedSortedArray {
   // leetcode submit region begin(Prohibit modification and deletion)
   class Solution {
 
+    // time:O(log(N)) space:O(1)
     public int findMin(int[] nums) {
       int i = 0;
       int j = nums.length - 1;
@@ -58,6 +59,7 @@ public class _153_FindMinimumInRotatedSortedArray {
       return nums[0];
     }
 
+    // time:O(N) space:O(1)
     public int findMin2(int[] nums) {
       int min = Integer.MAX_VALUE;
       for (int i = 1; i < nums.length; i++) {
